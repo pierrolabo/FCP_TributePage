@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,6 +7,7 @@
 
 body {
   background: #1f8dae;
+  font-family: 'Josefin', sans-serif;
 }
 
 main {
@@ -20,16 +23,69 @@ h3 {
   justify-content: center;
   align-items: center;
 }
-
-figure {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 55vh;
-
-  margin: 28px 5px;
+h3,
+h1 {
+  color: #303030;
+}
+ul {
+  list-style: none;
 }
 
+#title {
+  margin-top: 24px;
+}
+.title-caption {
+  margin-top: 4px;
+  font-size: 13px;
+}
+#img-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 5vh;
+  max-height: 45vh;
+  margin: 28px 5px;
+  transform: translateX(-500px);
+  transition: transform 2s ease-in;
+  transform: translateX(0);
+}
+
+#img-div img {
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+#img-caption {
+  margin-top: 8px;
+}
+#tribute-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+.tribute-title {
+  margin-bottom: 12px;
+}
+
+#tribute-info li {
+  margin: 6px;
+  padding: 4px;
+}
+
+.tribute-link__title {
+  display: block;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+#tribute-link {
+  font-size: 18px;
+}
 img {
   height: 100%;
   width: auto;
@@ -40,5 +96,25 @@ hr {
   justify-content: center;
   align-items: center;
   width: 40%;
-  margin: auto;
+  margin: 22px auto;
+}
+
+.albums {
+  display: flex;
+  min-height: 50vh;
+  margin: 22px 34px;
+  flex-wrap: wrap;
+}
+.albums img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 2px;
+  flex-grow: 1;
+
+  opacity: 1;
+}
+
+.albums img:hover {
+  transform: scale(1.1);
 }
